@@ -1,0 +1,78 @@
+/* aspectos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500&display=swap');
+
+:root{
+    --principal-color:#419197;
+    --secundary-color:#4CB2BA;
+    --tituloback:130px;
+    --subtitulos-size:85px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif;
+    color: var(--secundary-color);
+}
+
+p,a,li,button,table{
+    font-family: 'Zen Old Mincho', serif;
+}
+
+
+/* Home */
+
+header{
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#010608,80%, #419197);
+}
+.bg-portafolio .nav-link{
+    color: var(--secundary-color);
+}
+
+.bg-portafolio{
+    background: #46464673;
+    border-radius: 45px;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 8vh;
+    left: 30%;
+    font-size: 20px;
+}
+#hero .center{
+    padding-top: auto;
+}
+
+#hero .center img{
+    max-width: 100%;
+    padding-top: 25%;
+}
+
+#hero .left{
+    padding: 0 auto;
+    padding-top: 23%;
+}
+#hero .left h3{
+    color: #7C7B7B;
+}
+#hero .left h2{
+    color: #C7C7C7;
+    font-size: var(--subtitulos-size);
+}
+#hero .left h1{
+    color: var(--principal-color);
+    font-size: 3.5rem;
+}
+
+#hero .right{
+    padding-top: 20%;
+    text-align: right;
+}
+
+#hero .right img{
+    margin: 1rem 0;
+}
