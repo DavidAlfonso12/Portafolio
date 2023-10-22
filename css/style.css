@@ -22,7 +22,6 @@ p,a,li,button,table{
 /* Home */
 
 header{
-
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to right,#010608,80%, #419197);
@@ -39,22 +38,23 @@ header{
     padding: 0;
     position: absolute;
     width: 100%;
-    bottom: 8vh;
+    bottom: 4vh;
     left: 30%;
     font-size: 20px;
 }
+
 #hero .center{
     padding-top: auto;
 }
 
 #hero .center img{
     max-width: 100%;
-    padding-top: 25%;
+    padding-top: 15%;
 }
 
 #hero .left{
     padding: 0 auto;
-    padding-top: 23%;
+    padding-top: 15%;
 }
 #hero .left h3{
     color: #7C7B7B;
@@ -69,10 +69,143 @@ header{
 }
 
 #hero .right{
-    padding-top: 20%;
+    margin-left: 3rem;
+    display: flex;
+    padding-top: 15%;
     text-align: right;
+    flex-direction: column;
+    width: 6.5%;
 }
 
 #hero .right img{
     margin: 1rem 0;
+}
+
+/* About me */
+#hero2 h3, #hero3 h3{
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    left: 40%;
+    top: 40px;
+    color: #4cb3ba23;
+}
+
+#hero2 h2, #hero3 h2{
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+#hero2 .row img{
+    max-height: 52vh;
+    min-width: 300px;
+    
+}
+.containerImagen{
+    position: relative;
+}
+#hero2 .imgAbout .containerImagen::after{
+    content: "";
+    background: #4cb3ba00;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 5px 5px 2px 1px #4CB2BA;
+    margin-bottom: 2rem;
+}
+
+#hero2 .imgAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#hero2 .aboutMe{
+    margin-top: 2rem;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#hero2 .row p{
+    color: #C7C7C7;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 25px;
+}
+
+/* Projects */
+
+#hero3 .row img{
+    max-width: 100% !important; 
+    max-height: 100%;
+}
+
+#hero3 .cardProject{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#hero3 .card{
+    box-shadow: 5px 5px 5px #4CB2BA;
+}
+/* #hero3 h2::after{
+    content: "Projects";
+    position: absolute;
+    color: #41919728;
+    top: 3rem;
+    left: 40rem;
+    position: fixed;
+    font-size: 70px;
+} */
+
+#hero3 .card-body .icon{
+    max-width: 17% !important;
+    margin-bottom: 10px;
+}
+#hero3 .card-body .git{
+    max-width: 13% !important;
+    margin: 0 5px;
+}
+
+
+/* media query */
+
+@media (max-width: 992px){
+    #hero .right{
+        margin-left: 25%;
+        width: 10%;
+    }
+    .bg-portafolio{
+        background: #46464673;
+        border-radius: 45px;
+        max-width: 40%;
+        margin: 0 auto;
+        padding: 0;
+        position: static;
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px){
+    #hero .right{
+        flex-direction: row;
+        margin-left: 15%;   
+    }
+    #hero .right img{
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:450px){
+    #hero .right img{
+        margin: 0 .2rem;
+    }
 }
