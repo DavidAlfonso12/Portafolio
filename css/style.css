@@ -43,6 +43,10 @@ header{
     font-size: 20px;
 }
 
+#hero{
+    padding-top: 4%;
+}
+
 #hero .center{
     padding-top: auto;
 }
@@ -82,7 +86,7 @@ header{
 }
 
 /* About me */
-#hero2 h3, #hero3 h3{
+#hero2 h3, #hero3 h3, #hero4 h3{
     text-align: center;
     font-size: 70px;
     position: absolute;
@@ -91,10 +95,10 @@ header{
     color: #4cb3ba23;
 }
 
-#hero2 h2, #hero3 h2{
+#hero2 h2, #hero3 h2, #hero4 h2{
     text-align: center;
     padding-top: 5rem;
-    margin-bottom: 30px;
+    margin-bottom: 8%;
     font-size: 45px;
 }
 
@@ -155,15 +159,15 @@ header{
 #hero3 .card{
     box-shadow: 5px 5px 5px #4CB2BA;
 }
-/* #hero3 h2::after{
+#hero3 h2::after{
     content: "Projects";
     position: absolute;
     color: #41919728;
-    top: 3rem;
-    left: 40rem;
+    top: 2.8rem;
+    left: 52rem;
     position: fixed;
     font-size: 70px;
-} */
+}
 
 #hero3 .card-body .icon{
     max-width: 17% !important;
@@ -174,6 +178,32 @@ header{
     margin: 0 5px;
 }
 
+/* Skills*/
+#hero4{
+    padding-top: 35px;
+}
+#hero4 .container h3{
+    padding-top: 2rem;
+    margin-left: 5%;
+}
+
+#hero4 .container img{
+    padding-top: 8%;
+    width: 15%;
+    margin: 0 2rem;
+}
+
+#hero4 .contentSkill{
+    padding-top: 3rem;
+    margin-left: 15%;
+}
+
+#hero4 .contentSkill h5{
+    display: inline;
+    position: absolute;
+    margin: 2rem;
+    padding-left: 10px;
+}
 
 /* media query */
 
@@ -192,6 +222,9 @@ header{
         width: 100%;
         font-size: 20px;
     }
+    #hero4 .contentSkill{
+        margin-left: 0;
+    }
 }
 
 @media (max-width:767px){
@@ -202,6 +235,7 @@ header{
     #hero .right img{
         margin: 0 1rem;
     }
+    
 }
 
 @media (max-width:450px){
