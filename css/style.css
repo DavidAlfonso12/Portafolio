@@ -62,14 +62,44 @@ header{
 }
 #hero .left h3{
     color: #7C7B7B;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
+
 #hero .left h2{
     color: #C7C7C7;
     font-size: var(--subtitulos-size);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
 #hero .left h1{
     color: var(--principal-color);
     font-size: 3.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 #hero .right{
@@ -78,15 +108,16 @@ header{
     padding-top: 15%;
     text-align: right;
     flex-direction: column;
-    width: 6.5%;
+    width: 4.5%;
 }
 
 #hero .right img{
     margin: 1rem 0;
+    width: 40px;
 }
 
 /* About me */
-#hero2 h3, #hero3 h3, #hero4 h3{
+#hero2 h3, #hero3 h3, #hero4 h3,#hero5 h3{
     text-align: center;
     font-size: 70px;
     position: absolute;
@@ -95,10 +126,10 @@ header{
     color: #4cb3ba23;
 }
 
-#hero2 h2, #hero3 h2, #hero4 h2{
+#hero2 h2, #hero3 h2, #hero4 h2, #hero5 h2{
     text-align: center;
     padding-top: 5rem;
-    margin-bottom: 8%;
+    margin-bottom: 3rem;
     font-size: 45px;
 }
 
@@ -127,7 +158,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 #hero2 .aboutMe{
     margin-top: 2rem;
@@ -148,10 +178,10 @@ header{
 #hero3 .row img{
     max-width: 100% !important; 
     max-height: 100%;
+    display: inline;
 }
 
-#hero3 .cardProject{
-    margin-bottom: 2rem;
+#hero3 .classCarousel .cardProject{
     display: flex;
     justify-content: center;
 }
@@ -159,7 +189,7 @@ header{
 #hero3 .card{
     box-shadow: 5px 5px 5px #4CB2BA;
 }
-#hero3 h2::after{
+/* #hero3 h2::after{
     content: "Projects";
     position: absolute;
     color: #41919728;
@@ -167,7 +197,7 @@ header{
     left: 52rem;
     position: fixed;
     font-size: 70px;
-}
+} */
 
 #hero3 .card-body .icon{
     max-width: 17% !important;
@@ -194,7 +224,6 @@ header{
 }
 
 #hero4 .contentSkill{
-    padding-top: 3rem;
     margin-left: 15%;
 }
 
@@ -203,6 +232,57 @@ header{
     position: absolute;
     margin: 2rem;
     padding-left: 10px;
+}
+
+/* Education and experience */
+
+#hero5 .imgAbout{
+    text-align: center;
+}
+#hero5 .imgAbout .col-lg-6 h4{
+    margin-top: 3rem;
+}
+#hero5 .imgAbout p{
+    color: #fff;
+    font-size: 23px;
+}
+#hero5 h3{
+    left: 20%;
+}
+
+#hero5 .imgAbout .infoEducation{
+    text-align: start;
+    margin: 3rem 5rem;
+}
+
+#hero5 .imgAbout .infoEducation h4{
+    color: #7C7B7B;
+}
+
+/* Slider */
+
+.slick-arrow{
+    width: 30px;
+    height: 30px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    top: 156px;
+    right: 0;
+    border: 0;
+}
+
+.slick-prev{
+    left: -30px;
+    background: var(--secundary-color) url("../img/projects/arrow.png");
+    background-size: 100%;
+}
+
+.slick-next{
+    right: 0;
+    background: var(--secundary-color) url("../img/projects/arrow.png");
+    background-size: 100%;
+    transform: rotate(180deg);
 }
 
 /* media query */
@@ -234,6 +314,9 @@ header{
     }
     #hero .right img{
         margin: 0 1rem;
+    }
+    .slick-prev{
+        left: 0px;
     }
     
 }
