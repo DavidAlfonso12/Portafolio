@@ -301,15 +301,19 @@ header{
     .bg-portafolio{
         background: #46464673;
         border-radius: 45px;
-        max-width: 40%;
+        max-width: 60%;
         margin: 0 auto;
         padding: 0;
         position: static;
         width: 100%;
         font-size: 20px;
+        text-align: center;
     }
     #hero4 .contentSkill{
         margin-left: 0;
+    }
+    .bg-portafolio .container{
+        justify-content: center;
     }
 }
 
@@ -330,11 +334,63 @@ header{
 @media (max-width:600px){
     .slick-prev{
         left: 0px;
+        z-index: 999;
     }
 }
 
 @media (max-width:450px){
     #hero .right img{
         margin: 0 .2rem;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width:768px) and (max-width:1025px) {
+    #hero4 .container img{
+        width: 12%;
+    }
+    #hero4 .contentSkill h5{
+        margin: 1rem;
+    }
+    #hero2 h3, #hero3 h3, #hero4 h3,#hero5 h3{
+        display: none;
+    }
+}
+
+/* SmartPhone */
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    #hero .left h2{
+        font-size: 2.5rem;
+    }
+    #hero .left h1{
+        font-size: 1.8rem;
+    }
+    #hero4 .container img{
+        width: 12%;
+    }
+    #hero4 .contentSkill h5{
+        margin: 1rem;
+    }
+    #hero .center img {
+        max-width: 80%;
+        padding-top: 15%;
+        margin-left: 25px;
+    }
+    #hero2 .imgAbout .containerImagen::after{
+        width: 100%;
+    }
+    #hero2 .row img {
+        min-width: 256px;
+    }
+    #hero2 h2, #hero3 h2, #hero4 h2, #hero5 h2{
+        padding-top: 2.5rem;
+        font-size: 40px;
+    }
+    #hero2 .row p{
+        font-size: 20px;
     }
 }
