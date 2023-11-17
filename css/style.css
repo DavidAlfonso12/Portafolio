@@ -303,14 +303,16 @@ header{
         border-radius: 45px;
         max-width: 60%;
         margin: 0 auto;
-        padding: 0;
+        padding: 10px;
         position: static;
-        width: 100%;
+        width: 50%;
         font-size: 20px;
         text-align: center;
     }
     #hero4 .contentSkill{
         margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
     .bg-portafolio .container{
         justify-content: center;
@@ -357,6 +359,19 @@ header{
     #hero2 h3, #hero3 h3, #hero4 h3,#hero5 h3{
         display: none;
     }
+    #hero2 .aboutMe{
+        padding: 30px;
+    }
+    .slick-prev{
+        left: -20px;
+    }
+    .bg-portafolio .container button{
+        background: #4CB2BA;
+    }
+    #hero4 .container .row .row .skillsCont{
+        margin-left: 11%;
+        margin-top: 15px;
+    }
 }
 
 /* SmartPhone */
@@ -370,10 +385,13 @@ header{
         font-size: 1.8rem;
     }
     #hero4 .container img{
-        width: 12%;
+        padding-top: 15%;
+        margin-left: 45px;
     }
     #hero4 .contentSkill h5{
         margin: 1rem;
+        font-size: 16px;
+        padding-left: 30px;
     }
     #hero .center img {
         max-width: 80%;
@@ -393,4 +411,15 @@ header{
     #hero2 .row p{
         font-size: 20px;
     }
+    .bg-portafolio .container button{
+        background: #4CB2BA;
+    }
+    #hero4 .container .row .row .skillsCont{
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+    #hero4 .container .row .row .skillsCont .displayBlock{
+        display: block  ;
+    }   
 }
